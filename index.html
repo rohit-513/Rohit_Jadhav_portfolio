@@ -6,6 +6,10 @@
   <title>Personal Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  
+                                 <!-----------------CSS SECTION----------------->
+  
   <style>
     * {
       margin: 0;
@@ -13,11 +17,14 @@
       box-sizing: border-box;
       font-family: 'Roboto', sans-serif;
     }
+
+
     body {
       background-color:#141313;
       color: hsl(0, 0%, 100%);
       padding: 20px;
     }
+
 
     .container {
       max-width: 900px;
@@ -25,9 +32,11 @@
       padding: 20px;
     }
     
+
     h1, h2 {
       color: hsl(35, 100%, 68%);
     }
+
 
     h1 {
       font-size: 48px;
@@ -35,6 +44,7 @@
       text-align: center;
       margin-bottom: 10px;
     }
+
 
     .info {
       display: flex;
@@ -45,9 +55,11 @@
       margin-bottom: 20px;
     }
 
+
     .info i {
       margin-right: 6px;
     }
+
 
     .social {
       display: flex;
@@ -56,11 +68,13 @@
       margin-bottom: 30px;
     }
 
+
     .social a {
       color: hsl(0, 0%, 100%);
       font-size: 20px;
       text-decoration: none;
     }
+
 
     .section {
       padding: 30px;
@@ -70,6 +84,7 @@
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
     }
 
+
     .skills-bar {
       background-color: #333;
       border-radius: 10px;
@@ -78,6 +93,7 @@
       height: 20px;
       width: 100%;
     }
+
 
     .skills-bar-fill {
       background-color: hsl(35, 100%, 68%);
@@ -90,6 +106,7 @@
       line-height: 19px;
     }
 
+
     .projects-menu {
       display: flex;
       gap: 10px;
@@ -97,6 +114,13 @@
       margin-bottom: 20px;
       flex-wrap: wrap;
     }
+
+
+    .projects-menu button.active {
+      background-color: hsl(35, 100%, 68%);
+      color: #000000;
+    }
+
 
     .projects-menu button {
       background-color: #1e1e1e;
@@ -108,10 +132,12 @@
       transition: all 0.3s ease;
     }
 
+
     .projects-menu button:hover {
       background-color: hsl(35, 100%, 68%);
       color: #000000;
     }
+
 
     .projects {
       display: flex;
@@ -119,6 +145,7 @@
       gap: 20px;
       justify-content: center;
     }
+
 
     .card {
       background-color: #000000;
@@ -128,6 +155,7 @@
       color: hsl(35, 100%, 68%);
     }
 
+
     .card img {
       width: 100%;
       height: 150px;
@@ -136,10 +164,12 @@
       margin-bottom: 10px;
     }
 
+
     .card a {
       color: hsl(35, 100%, 68%);
       text-decoration: none;
     }
+
 
     form {
       display: flex;
@@ -150,6 +180,7 @@
       margin: auto;
     }
 
+
     input, textarea, button {
       padding: 10px;
       border: none;
@@ -158,6 +189,7 @@
       color: hsl(35, 100%, 68%);
     }
 
+
     button {
       background-color: hsl(35, 100%, 68%);
       color: #000000;
@@ -165,12 +197,16 @@
       cursor: pointer;
     }
 
+
     @media (max-width: 600px) {
       .skills-bar {
         width: 100%;
       }
     }
   </style>
+
+                                  <!-----------------HTML SECTION----------------->
+
 </head>
 <body>
   <div class="container">
@@ -188,36 +224,52 @@
       <a href="https://www.behance.net/rohit_jadhav"><i class="fab fa-behance"></i></a>
     </div>
 
+
+          <!-----------------ABOUT ME SECTION----------------->
+
     <div class="section">
       <h2><i class="fa-solid fa-user"></i> About Me</h2>
       <p>My Name is Rohit. Recent graduate seeking an entry-level opportunity to apply academic knowledge and skills in the IT industry. Quick learner with a strong work ethic and a passion for contributing to team success with high motivation and leadership skills.</p>
     </div>
 
+
+
+
+          <!-----------------EDUCATION  SECTION----------------->
+
     <div class="section">
       <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
       <p>B.Sc in Computer Science - Dr.Dy.Patil Arts, Commerce, Science College</p>
-      <p style="color:hsl(35, 100%, 68%)">2022-2024</p><br>
+             <p style="color:hsl(35, 100%, 68%)">2022-2024</p><br>
       <p>HSC Science - Swami Vivekanand College</p>
-      <p style="color:hsl(35, 100%, 68%)">2020-2021</p><br>
+             <p style="color:hsl(35, 100%, 68%)">2020-2021</p><br>
       <p>SSC - Sarnobat Gajananrao Thopte English School</p>
-      <p style="color:hsl(35, 100%, 68%)">2019</p>
+             <p style="color:hsl(35, 100%, 68%)">2019</p>
     </div>
+
+
+
+          <!-----------------SKILLS SECTION----------------->
 
     <div class="section">
       <h2><i class="fa-solid fa-laptop-code"></i> My Skills</h2>
       <div>SQL</div>
-      <div class="skills-bar"><div class="skills-bar-fill" style="width: 90%">90%</div></div>
+                 <div class="skills-bar"><div class="skills-bar-fill" style="width: 90%">90%</div></div>
       <div>JAVA</div>
-      <div class="skills-bar"><div class="skills-bar-fill" style="width: 90%">80%</div></div>
+                 <div class="skills-bar"><div class="skills-bar-fill" style="width: 90%">80%</div></div>
       <div>CLOUD COMPUTING</div>
-      <div class="skills-bar"><div class="skills-bar-fill" style="width: 80%">70%</div></div>
+                 <div class="skills-bar"><div class="skills-bar-fill" style="width: 80%">70%</div></div>
       <div>HTML</div>
-      <div class="skills-bar"><div class="skills-bar-fill" style="width: 90%">90%</div></div>
+                 <div class="skills-bar"><div class="skills-bar-fill" style="width: 90%">90%</div></div>
       <div>CSS</div>
-      <div class="skills-bar"><div class="skills-bar-fill" style="width: 85%">80%</div></div>
+                 <div class="skills-bar"><div class="skills-bar-fill" style="width: 85%">80%</div></div>
       <div>JavaScript</div>
-      <div class="skills-bar"><div class="skills-bar-fill" style="width: 80%">70%</div></div>
+                 <div class="skills-bar"><div class="skills-bar-fill" style="width: 80%">70%</div></div>
     </div>
+
+      
+    
+          <!-----------------PROJECT MENU SECTION----------------->
 
     <div class="section">
       <h2><i class="fa-solid fa-folder-open"></i> Projects</h2>
@@ -225,20 +277,27 @@
         <button onclick="filterProjects('all')">All</button>
         <button onclick="filterProjects('uiux')">UI/UX</button>
         <button onclick="filterProjects('dev')">Development</button>
-      </div>
-      <div class="projects">
+    </div>
+
+      
+      
+          <!-----------------PROJECT SECTION----------------->
+      
+    <div class="projects">
         <div class="card" data-type="uiux">
           <img src="photo/FD_UI.UX.png" alt="UI Project">
           <h3>UI Project</h3>
           <p style="color: white;">Design prototype of Food Delivery App.</p>
           <a href="https://www.behance.net/gallery/205878565/Food-Delivery-App-UI" style="color: rgb(108, 108, 236);">View Project</a>
         </div>
+        
         <div class="card" data-type="dev">
           <img src="photo/PP_WD.png" alt="Dev Project">
           <h3>Dev Project</h3>
           <p style="color: white;">Personal Portfolio Website.</p>
           <a href="https://rohit-513.github.io/Rohit_Jadhav_portfolio/" style="color: rgb(108, 108, 236);">View Project</a>
         </div>
+        
         <div class="card" data-type="dev">
           <img src="photo/CS_WD.png" alt="Portfolio">
           <h3>Dev Project</h3>
@@ -248,28 +307,55 @@
       </div>
     </div>
 
+
+
+         <!-----------------CONTACT SECTION SECTION----------------->
+
     <div class="section">
       <h2><i class="fa-solid fa-envelope-open-text"></i> Contact Me</h2>
       <form action="mailto:rohitjadhav3663@gmail.com" method="POST" enctype="text/plain">
+        
         <input type="text" name="name" placeholder="Your Name" required>
+        
         <input type="email" name="email" placeholder="Your Email" required>
+        
         <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        
         <button type="submit">Send Message</button>
       </form>
     </div>
   </div>
 
+
+
+
+
+       <!-----------------JAVASCRIPT SECTION----------------->
+
   <script>
-    function filterProjects(type) {
-      const cards = document.querySelectorAll('.card');
-      cards.forEach(card => {
-        if (type === 'all' || card.dataset.type === type) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-  </script>
+  function filterProjects(type) {
+    const cards = document.querySelectorAll('.card');
+    const buttons = document.querySelectorAll('.projects-menu button');
+
+    // Filter project cards
+    cards.forEach(card => {
+      if (type === 'all' || card.dataset.type === type) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Set active class to the clicked button
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.projects-menu button[onclick*="${type}"]`).classList.add('active');
+  }
+
+  // Set "All" as default active on page load
+  window.addEventListener('DOMContentLoaded', () => {
+    filterProjects('all');
+  });
+</script>
+
 </body>
 </html>
